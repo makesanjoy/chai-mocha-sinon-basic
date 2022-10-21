@@ -1,0 +1,28 @@
+{
+  "name": "mongo-tube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "coverage": "nyc --reporter=lcov --reporter=text npm run test"
+  },
+  "nyc":{
+  "inclued":"src",
+  "exclude":"test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.0.0",
+    "mongoose": "^6.6.5",
+    "nock": "^13.2.9",
+    "nodemon": "^2.0.20",
+    "nyc": "^15.1.0",
+    "sinon": "^14.0.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
